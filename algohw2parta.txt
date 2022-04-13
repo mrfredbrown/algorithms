@@ -1,0 +1,24 @@
+def split_in_half(string):
+    #string = "bbbbbcaaaaa"
+    length = len(string)
+    #array1 = []
+    #array2 = []
+
+    half = length//2
+
+    #print(half)
+    string1 = string[:half+1]
+    string2 = string[half+1:length+1]
+   
+    print("The 1st half of string is:",string1)
+    print("The 2nd half of string is:",string2)
+    string1, string2 = string2 , string1
+    print("reverse strings")
+    print(string1)
+    print(string2)
+    print(string1+string2)
+
+
+test_string = "bbbbbcaaaaa"
+
+split_in_half(test_string)
